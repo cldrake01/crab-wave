@@ -7,8 +7,3 @@ edition = "2021"
 
 [dependencies]
 pyo3 = { git = "https://github.com/pyo3/pyo3", features = ["extension-module"] }
-
-[lib]
-name = "src"
-# "cdylib" is necessary to produce a shared library for Python to import from.
-crate-type = ["cdylib"]
