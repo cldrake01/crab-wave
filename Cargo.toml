@@ -1,10 +1,12 @@
 [package]
-name = "crab-wave"
+name = "cw"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "cw"
+crate-type = ["cdylib"]
 
 [dependencies]
-nalgebra = "0.32.5"
-pyo3 = { git = "https://github.com/pyo3/pyo3", features = ["extension-module"] }
+pyo3 = "0.20.0"
