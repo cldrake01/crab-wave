@@ -1,13 +1,15 @@
 [tool.poetry]
 name = "crab_wave"
-
+version = "0.1.0"
+description = "A Python library for working with waveforms"
+authors = ["cldrake01"]
 
 [build-system]
 requires = ["maturin>=1.5,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "cw"
+name = "cwr"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
@@ -15,5 +17,6 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
+
 [tool.maturin]
 features = ["pyo3/extension-module"]

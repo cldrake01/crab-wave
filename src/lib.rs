@@ -8,8 +8,9 @@ fn dot(a: Vec<f64>, b: Vec<f64>) -> PyResult<f64> {
     Ok(zipped.map(|(x, y)| x * y).sum::<f64>().into())
 }
 
+/// A Python module implemented in Rust.
 #[pymodule]
-fn cw(_py: Python, m: &PyModule) -> PyResult<()> {
+fn cwr(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(dot, m)?)?;
     Ok(())
 }
